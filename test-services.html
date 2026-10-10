@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحة تجريبية لخدمات NOVA الرقمية.">
+    <title>NOVA | اختبار الخدمات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .test-page {
+            width: min(1100px, 90%);
+            margin: auto;
+            padding: 70px 0 100px;
+        }
+
+        .test-page-header {
+            max-width: 700px;
+            margin-bottom: 45px;
+        }
+
+        .test-page-header h1 {
+            margin-top: 14px;
+            font-size: clamp(36px, 6vw, 64px);
+            line-height: 1.35;
+        }
+
+        .test-page-header p {
+            max-width: 600px;
+            margin-top: 18px;
+            color: var(--muted);
+        }
+
+        .test-page .services-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .test-link {
+            display: inline-flex;
+            margin-top: 38px;
+            color: var(--purple);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 760px) {
+            .test-page .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">N</span>
+            NOVA<span class="logo-dot">.</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="test-contact.html">تواصل معنا</a>
+        </nav>
+        <a href="#services" class="nav-button">الخدمات</a>
+    </header>
+
+    <main class="test-page">
+        <header class="test-page-header">
+            <span class="section-label">صفحة اختبارية 01</span>
+            <h1>حلول رقمية تصنع <span class="gradient-text">فرقًا حقيقيًا.</span></h1>
+            <p>
+                صفحة تجريبية لاختبار بطاقات الخدمات، التباعد، وتجربة العرض
+                على الشاشات المختلفة باستخدام نفس هوية موقع NOVA.
+            </p>
+        </header>
+
+        <section id="services" class="services-grid" aria-label="خدماتنا">
+            <article class="service-card">
+                <div class="service-icon purple">⌘</div>
+                <span class="card-number">01</span>
+                <h3>تصميم المواقع</h3>
+                <p>واجهات عصرية وسريعة ومتجاوبة تمنح زوارك تجربة استخدام مميزة.</p>
+                <a href="test-contact.html">ابدأ الآن ←</a>
+            </article>
+
+            <article class="service-card featured">
+                <div class="service-icon orange">✳</div>
+                <span class="card-number">02</span>
+                <h3>تطوير البرمجيات</h3>
+                <p>حلول تقنية مرنة ومصممة خصيصًا لتلبية احتياجات مشروعك.</p>
+                <a href="test-contact.html">اكتشف المزيد ←</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon blue">◈</div>
+                <span class="card-number">03</span>
+                <h3>التجربة الرقمية</h3>
+                <p>نهتم بالتفاصيل لنصنع تجربة سهلة الاستخدام وتترك انطباعًا قويًا.</p>
+                <a href="test-contact.html">لنتحدث ←</a>
+            </article>
+        </section>
+
+        <a class="test-link" href="index.html">← العودة إلى الصفحة الرئيسية</a>
+    </main>
+</body>
+</html>

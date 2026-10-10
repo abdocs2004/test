@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحة تجريبية للتواصل مع فريق NOVA.">
+    <title>NOVA | اختبار التواصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-test {
+            width: min(900px, 90%);
+            margin: auto;
+            padding: 80px 0 110px;
+        }
+
+        .contact-test h1 {
+            margin-top: 14px;
+            font-size: clamp(36px, 6vw, 60px);
+            line-height: 1.35;
+        }
+
+        .contact-test-intro {
+            max-width: 610px;
+            margin-top: 18px;
+            color: var(--muted);
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 18px;
+            margin-top: 45px;
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background: linear-gradient(145deg, #151827, #0e101a);
+        }
+
+        .contact-form label {
+            display: grid;
+            gap: 8px;
+            color: #e5e5f5;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 13px 15px;
+            background: #090b14;
+            color: var(--text);
+            font: inherit;
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--purple);
+        }
+
+        .contact-form textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            width: fit-content;
+            border: 0;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .contact-test-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 30px;
+            color: var(--purple);
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">N</span>
+            NOVA<span class="logo-dot">.</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="test-services.html">الخدمات</a>
+        </nav>
+        <a href="#contact-form" class="nav-button">راسلنا</a>
+    </header>
+
+    <main class="contact-test">
+        <span class="section-label">صفحة اختبارية 02</span>
+        <h1>لديك فكرة؟ <span class="gradient-text">دعنا نبدأ.</span></h1>
+        <p class="contact-test-intro">
+            نموذج تواصل تجريبي لاختبار الحقول والأزرار والتخطيط المتجاوب.
+            لن يتم إرسال البيانات إلى خادم حقيقي.
+        </p>
+
+        <form class="contact-form" id="contact-form">
+            <label>
+                الاسم
+                <input type="text" name="name" placeholder="اكتب اسمك" required>
+            </label>
+
+            <label>
+                البريد الإلكتروني
+                <input type="email" name="email" placeholder="name@example.com" required>
+            </label>
+
+            <label>
+                تفاصيل المشروع
+                <textarea name="message" placeholder="اكتب نبذة قصيرة عن فكرتك" required></textarea>
+            </label>
+
+            <button type="submit" class="button-primary">إرسال الرسالة ↗</button>
+        </form>
+
+        <div class="contact-test-links">
+            <a href="test-services.html">الخدمات ←</a>
+            <a href="index.html">الصفحة الرئيسية ←</a>
+        </div>
+    </main>
+</body>
+</html>
